@@ -32,10 +32,11 @@ footer {
     padding: 20px; /* Espaciado interno */
 }
 
-h1, h2, p, ul li {
+h1, h2, p, ul li, a {
     color: #c9bd8b;
     list-style: none;
     text-align: center;
+    text-decoration: none;
 }
 main {
     display: flex; 
