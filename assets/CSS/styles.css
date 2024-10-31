@@ -1,0 +1,130 @@
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura */
+    margin: 0; /* Elimina los márgenes por defecto */
+    background-color: #c9bd8b; /* Beige */
+    overflow: hidden;
+}
+
+header {
+    background-color: #591704; /* Color oscuro */
+    height: 2px;
+}
+
+footer {
+    background-color: #591704; /* Color oscuro */
+    height: 2px; /* Altura del footer */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    left: 0; /* Asegura que el footer esté alineado a la izquierda */
+    color: #c9bd8b; /* Letras en beige claro */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para el footer */
+}
+
+
+.full-height {
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    background-color: #000; /* Fondo negro */
+    color: #c9bd8b; /* Letras en beige claro */
+    padding: 20px; /* Espaciado interno */
+}
+
+h1, h2, p, ul li {
+    color: #c9bd8b;
+    list-style: none;
+    text-align: center;
+}
+main {
+    display: flex; 
+    justify-content: center; 
+}
+
+#div1, #div2 {
+    width: 50%; 
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; 
+    animation-duration: 1s; 
+}
+
+#div3 {
+    width: 100%; 
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; 
+    animation-duration: 1s; 
+}
+#social-icons a {
+    text-decoration: none; 
+    outline: none;
+    color: #c9bd8b;
+}
+
+#social-icons a:hover {
+    text-decoration: none;
+    color: #c9bd8b;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-enviar {
+    background-color: transparent;
+    color: #c9bd8b;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-enviar:active {
+    animation: scale 0.2s ease;
+}
+.full-screen {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Asegura que los elementos vayan en columna */
+}
+.full-height {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    background-color: #000; /* Fondo negro */
+    color: #c9bd8b; /* Letras en beige claro */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+.project-grid {
+    display: flex;
+    flex-direction: column; /* Mantiene las filas en columna */
+    width: 100%; /* Ocupa el ancho completo */
+}
+
+.project-row {
+    display: grid; /* Cambia esto para usar grid */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en cada fila */
+    gap: 16px; /* Espaciado entre elementos de la fila */
+    margin: 10px 0; /* Espacio entre las filas */
+}
+
+.project-item {
+    background-color: #444; /* Color de fondo para los proyectos */
+    padding: 16px;
+    border-radius: 8px; /* Esquinas redondeadas */
+    text-align: center; /* Centra el texto */
+}
